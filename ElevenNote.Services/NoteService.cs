@@ -46,11 +46,13 @@ namespace ElevenNote.Services {
                 return query.ToArray();
             }
         }
-        public NoteDetail GetNoteById(int noteId) {
+
+        public NoteDetail GetNoteById(int NoteId) {
             using (var ctx = new ApplicationDbContext()) {
                 var entity =
                     ctx
-                        .Notes.Single(e => e.NoteId == noteId && e.OwnerId == _userId);
+                        .Notes
+                        .Single(e => e.NoteId == NoteId && e.OwnerId == _userId);
                 return
                     new NoteDetail {
                         NoteId = entity.NoteId,
