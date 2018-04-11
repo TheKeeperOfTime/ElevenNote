@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="NoteDetail.cs" />
     <Compile Include="NoteCreate.cs" />
+    <Compile Include="NoteEdit.cs" />
     <Compile Include="NoteListItem.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
